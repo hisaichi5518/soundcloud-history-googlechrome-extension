@@ -1,0 +1,15 @@
+{
+  "name": "soundcloud-history",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "post soundcloud history to irc.",
+  "browser_action": {
+  },
+  "content_scripts": [
+    {
+        "matches": ["https://soundcloud.com/*"],
+        "js": ["jquery-2.0.3.min.js", "script.js"],
+        "run_at": "document_end"
+    }
+  ]
+}
